@@ -1,4 +1,4 @@
-# Project #2: Neighborhood Guide App
+#MyPlaces
 
 #### Overview
 
@@ -30,7 +30,3 @@ This app includes a SQLite database of locations that can be searched for by nam
 <p align="center">
  <img src="screenshots/favorites.png" width="200px">
 </p>
-
-#### Bugs
-
-There is an issue with storing and retrieving images from the database. In the future I would take images from the web and store only a few images in the drawable folder.
