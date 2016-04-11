@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/darker_gray">
+
+    <ImageView
+        android:id="@+id/listview_item_imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#39d4ff" />
+
+    <TextView
+        android:id="@+id/listview_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listview_item_ratingbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/listview_item_imageview"
+        android:layout_toRightOf="@+id/listview_item_imageview"
+        android:text="My Bank"
+        android:textSize="15dp" />
+
+    <RatingBar
+        android:id="@+id/listview_item_ratingbar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize=".5"
+        android:layout_marginRight="5dp"
+        android:rating="5"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/listview_item_reviews_textview"
+        android:layout_toStartOf="@+id/listview_item_reviews_textview" />
+
+    <TextView
+        android:id="@+id/listview_item_reviews_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(0)"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="17sp" />
+
+</RelativeLayout>
